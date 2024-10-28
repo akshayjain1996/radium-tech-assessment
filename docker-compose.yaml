@@ -19,5 +19,12 @@ services:
     volumes:
       - mongo-data:/data/db
 
+  frontend:
+    build: ./radium_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
 volumes:
   mongo-data:
