@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Radium Technical Assessment - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend component of the Radium Technical Assessment project. It's a React application that provides a user interface for managing user records.
 
-## Available Scripts
+## Dependencies
 
-In the project directory, you can run:
+- Node.js 14+
+- React 17+
+- Axios
+- Tailwind CSS
 
-### `npm start`
+For a complete list of dependencies, refer to the `package.json` file.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Running the Frontend Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Install dependencies:
+```
+npm install
+```
+2. The prefered way of running this application is using Docker and Docker Compose. To run the application using Docker Compose, refer to the instructions in the main README.md file.
+3. To run this outside docker, start the development server:
+```
+npm start
+```
 
-### `npm test`
+## Future Enhancements
+- Implement user authentication and protected routes
+- Add more advanced form validation
+- Implement pagination or infinite scrolling for the user list
+- Add a search functionality to filter users
+- Implement error handling and user feedback for failed API calls
+- Add unit and integration tests for components and API interactions
+- Implement state management (e.g., Redux) for more complex data flows
+- Add accessibility features for better usability
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tech Stack Choices
+- I chose React for the frontend because of its flexibility and large ecosystem of libraries and tools. 
+- I used tailwind CSS for styling as it allows for rapid prototyping and easy customization. 
+- Axios was used for making API calls due to its simplicity and wide adoption in the React community. 
+- I used Figma + [ScreenShotToCode](https://github.com/abi/screenshot-to-code) to create the components.
