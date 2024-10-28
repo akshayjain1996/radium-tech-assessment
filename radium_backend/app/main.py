@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from beanie import init_beanie
 from app.models.user import User
 from app.api.users import router as users_router
@@ -10,6 +11,13 @@ import asyncio
 MONGODB_URL = os.getenv("MONGODB_URL", "mongodb://mongo:27017/radium_db")
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # Replace with your frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 async def connect_to_mongo():
     for i in range(5):  # Try 5 times
